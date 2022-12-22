@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <style>
       :root {
         --bs-coffee-rgb: 60, 40, 0;
@@ -29,6 +29,43 @@
         flex-wrap: wrap;
       }
 
+      #section01 {
+        height: 75vh;
+        margin-top: 16vh;
+        color: #fff;
+      }
+      @media (min-width: 992px) {
+        #section01 > .container-fluid .col-lg-7 {
+          border-right: 10px solid #fff;
+        }
+        #section01 > .container-fluid {
+          background-image: url(./bg-image-08.jpg);
+          height: 60vh;
+        }
+
+        #section01 > .container-fluid .col:nth-child(1) {
+          border-bottom: 10px solid #fff;
+        }
+      }
+      #section02 > .container-fluid {
+          height: 75vh;
+        }
+      @media (min-width: 768px) and (max-width: 991px) {
+        #section01 > .container-fluid {
+          background-image: url(./bg-image-08.jpg);
+          height: 60vh;
+        }
+        #section01 > .container-fluid .col-lg-7 {
+          border-bottom: 10px solid #fff;
+        }
+        #section01 > .container-fluid .col:nth-child(1) {
+          border-bottom: 10px solid #fff;
+        }
+      }
+      #section02 > .container-fluid {
+          height: 100vh;
+        }
+
       @media (max-width: 767px) {
         .card {
           width: 100% !important;
@@ -37,8 +74,25 @@
         .carousel-item img {
           height: 75% !important;
         }
+        #section01 {
+          height: 160vh;
+        }
+
+        #section01 .container-fluid {
+          background-image: url(./bg-image-08.jpg);
+          height: 150vh;
+        }
+        #section01 .col-12 {
+          border-bottom: 10px solid #fff;
+        }
+        #section01 .col-12 .col:nth-child(1) {
+          border-bottom: 10px solid #fff;
+        }
         #section02 {
-          height: 200vh;
+          height: 100vh;
+        }
+        #section02 > .container-fluid {
+          height: 100vh;
         }
         #section03 {
           height: 200vh;
@@ -56,7 +110,7 @@
         }
       }
     </style>
-    </head>
+  </head>
 
   <body>
     <!-- navbar 是flexbox
@@ -67,244 +121,96 @@
 		navbar-dark 文字變成白色
 				-->
     <script src="./bootstrap.bundle.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
-      <div class="container-fluid justify-content-start d-flex">
-        <!-- container-fluid 滿版 container 固定寬度 -->
-        <!-- 漢堡按鈕 -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="d-lg-inline-block d-none m-4" style="color: #fff">Follow us : <i class="bi bi-telephone-fill mx-2"></i><i
-            class="bi bi-twitter mx-2"></i><i class="bi bi-github mx-2"></i></span>
-        <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
-        <span class="d-lg-inline-block d-none m-4" style="color: #fff"><i
-            class="bi bi-telephone-fill mx-4"></i>1-800-800-800</span>
+    <section id="nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
+        <div class="container-fluid justify-content-start d-flex">
+          <!-- container-fluid 滿版 container 固定寬度 -->
+          <!-- 漢堡按鈕 -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+            Follow us :
+            <i class="bi bi-telephone-fill mx-2"></i>
+            <i class="bi bi-twitter mx-2"></i>
+            <i class="bi bi-github mx-2"></i>
+          </span>
+          <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
+          <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+            <i class="bi bi-telephone-fill mx-4"></i>
+            1-800-800-800
+          </span>
         </div>
-      <!-- 選單區 -->
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
-            <li class="nav-item mx-4">
-              <a class="nav-link active" href="#section01">菜單餐點</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#section02">周邊景點</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#section04">莊園位置</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#section05">聯絡我們</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#section05">聯絡我們</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#section05">聯絡我們</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-        </nav>
-    <!-- ---------------- -->
-    <section>
-      <div class="col-lg-7 col-12">
-        <h1>Art Gallery</h1>
-      </div>
-      <div class="col-lg-5 col-12 d-lg-flex"></div>
-    </section>
-    <!-- carousel -->
-    
-          <!--       card       -->
-          <section id="section02">
-            <div class="container-md">
-              <div class="d-flex mt-5 border-light" id="kard">
-                <div class="card mt-5 h-75 w-25">
-                  <img src="https://picsum.photos/300/200/?random=10" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor</h5>
-                    <p class="card-text">
-                      缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
-                      客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
-                      義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
-                      今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
-                      演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
-                    </p>
-                  </div>
-                </div>
-                <div class="card mt-5 h-75 w-25">
-                  <img src="https://picsum.photos/300/200/?random=9" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor</h5>
-                    <p class="card-text">
-                      缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
-                      客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
-                      義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
-                      今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
-                      演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
-                    </p>
-                  </div>
-                </div>
-                <div class="card mt-5 h-75 w-25">
-                  <img src="https://picsum.photos/300/200/?random=8" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor</h5>
-                    <p class="card-text">
-                      缺乏中文不可以義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧
-                      客合作德國採購今年也在一致也不，瀏覽次數不斷討論文字，缺乏中文不可以
-                      義務她的製品使用革命感覺業主表演，標題一會兒召開信心奧客合作德國採購
-                      今年也在一致也不，瀏覽次數不斷討論文字義務她的製品使用革命感覺業主表
-                      演，標題一會兒召開信心奧客合作德國採購今年也在一致也不，瀏覽次數不斷 討論文字
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- picture -->
-          <section id="section03">
-            <div class="w-100 mb-5 bg-secondary text-light">
-              <div class="row d-flex h-50 m-0">
-                <div class="col-12 col-md-6 p-md-0 p-0">
-            <img class="w-100 h-100" src="https://picsum.photos/2000/2000/?random=9" />
-            </div>
-            <div class="col-12 col-md-6 my-5 my-md-0 d-flex flex-column justify-content-center align-items-center">
-              <h1 class="">COFFEE</h1>
-              <h5 class="p-5">
-                感到有意做到深深估計貢獻製造確實升級一項防止附件過來填寫，章節演出認定這些承諾案例哈哈做法點這裡，所在
-                地很多負責些什麼影片不去超過天然主義，另一個目的回覆風景關閉大賽你沒有沒有，他們毫無手裡受到經過複雜有着
-                法規願意到底現有，告訴對你像是便利商店體現不詳的。告訴對你像是
-              </h5>
-              <a class="btn btn-success" href="#section01">See it</a>
-            </div>
-            </div>
-            <div class="row d-flex h-50 flex-column-reverse flex-md-row m-0">
-          <div class="col-12 col-md-6 my-5 my-md-0 d-flex flex-column justify-content-center align-items-center">
-            <h1 class="">COFFEE</h1>
-            <h5 class="p-5">
-              感到有意做到深深估計貢獻製造確實升級一項防止附件過來填寫，章節演出認定這些承諾案例哈哈做法點這裡，所在
-              地很多負責些什麼影片不去超過天然主義，另一個目的回覆風景關閉大賽你沒有沒有，他們毫無手裡受到經過複雜有着
-              法規願意到底現有，告訴對你像是便利商店體現不詳的。告訴對你像是
-            </h5>
-            <a class="btn btn-success" href="#section01">See it</a>
+        <!-- 選單區 -->
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+              <li class="nav-item mx-4">
+                <a class="nav-link active" href="#section01">菜單餐點</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#section02">周邊景點</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#section04">莊園位置</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#section05">聯絡我們</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#section05">聯絡我們</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#section05">聯絡我們</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-md-6 py-md-1 p-0">
-            <img class="w-100 h-100" src="https://picsum.photos/2000/2000/?random=10" />
+        </div>
+      </nav>
+    </section>
+    <!-- ---------------- -->
+    <section id="section01">
+      <div class="container-fluid">
+        <div class="row d-flex h-100 m-0">
+          <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center flex-column">
+            <h1>ART GALLERY</h1>
+            <h5>showcasing the best works of modern art</h5>
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+          <div class="col-12 col-lg-5 p-0 d-flex justify-content-center align-items-center flex-column">
+            <div class="col d-flex justify-content-center align-items-center h-100 w-100">
+              <h1 class="">event</h1>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center h-100">
+              <h1 class="d-block">event</h1>
+            </div>
             </div>
             </div>
             </div>
             </section>
-            <!-- map -->
-            <section id="section04">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12 mb-5">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.700952573984!2d121.41673676500635!3d25.044220783967425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1670459077749!5m2!1szh-TW!2stw"
-                      class="ratio" style="height: 50vh" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!----------------->
+    <section id="section02">
+      <div class="container-fluid">
+        <div class="row d-flex h-100 p-0">
+          <div class="col-12 col-lg-7 p-0 h-50">
+            <iframe class="w-100 h-100" width="1024" height="1024" src="https://www.youtube.com/embed/BZ2LrQtno70"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div
+            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center bg-secondary h-50">
+            <h1>About Us</h1>
+            <h3>Art Gallery is one of the country’s finest art museums welcoming over half a million visitors each year.</h3>
+            <h3>Weekdays: 8:00–20:00
+              Weekends: 9:00–18:00
+            </h3>
+            <button type="button" class="btn btn-primary">Primary</button>
           </div>
         </div>
       </div>
+
+
     </section>
-    <!-- form -->
-    <section id="section05">
-      <div class="container text-center mb-5">
-        <div class="row">
-          <div class="col-mb-12 text-center mb-5">
-            <h1>聯絡我們</h1>
-            <h2>泰山咖啡莊園,傳承coding精神</h2>
-            <h6>任何問服務問題或服務,歡迎您透過客服表單告知我們,謝謝</h6>
-          </div>
-          <div class="col">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="validationServer02" class="form-label">姓名</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" />
-                  <button class="btn btn-outline-secondary" type="button">先生</button>
-                  <button class="btn btn-outline-secondary" type="button">小姐</button>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="validationServer02" class="form-label">電話</label>
-                <input type="text" class="form-control" id="validationServer02" required />
-              </div>
-              <div class="col-md-6">
-                <label for="validationServerUsername" class="form-label">電子信箱</label>
-                <div class="input-group">
-                  <input type="text" class="form-control" id="validationServerUsername" required />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <label for="validationServer04" class="form-label">問題類型</label>
-                <select class="form-select" id="validationServer04" required>
-                  <option selected disabled value="">餐飲建議</option>
-                  <option>餐飲建議</option>
-                  <option>餐飲建議</option>
-                  <option>餐飲建議</option>
-                </select>
-              </div>
-              <div class="col-md-12">
-                <div class="form-floating">
-                  <textarea class="form-control" id="floatingTextarea2" style="height: 150px"></textarea>
-                  <label for="floatingTextarea2">問題內容</label>
-                  </div>
-                  </div>
-                  <div class="col-md-4 text-start">
-                    <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                  <label class="form-check-label" for="flexCheckChecked">訂閱泰山莊園電子報</label>
-                  </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="button">送出</button>
-                  </div>
-                  </form>
-                  </div>
-                  </div>
-                  </div>
-                  </section>
-                  <section id="footer">
-                    <div class="container-fluid bg-dark text-light h-100">
-                      <div class="row" style="align-items: center">
-                        <div class="col-md-1"></div>
-                        <div class="col-5 col-md-2 ms-4 mt-5 mb-5">
-            <img src="https://picsum.photos/500/500/?random=10" class="w-75 h-auto rounded-circle" />
-            </div>
-            <div class="col-5 col-md-2">
-              <p>
-              Address
-              <br />
-              1234 Street Name
-              <br />
-              City , AA 99999
-              </p>
-              </div>
-              <div class="col-6 col-md-3 mb-1">
-            LINK
-            <br />
-            Website Builder
-            <br />
-            Download for Windows
-            <br />
-            Download for Mac
-            </div>
-          <div class="col-5 col-md-3 mb-1">
-            Contacts
-            <br />
-            Email:asdasd@gmail.com
-            <br />
-            +1 (0) 000 0000 000
-            <br />
-            +1 (0) 000 0000 000
-          </div>
-          <div class="col-12 col-md-12">
-            <hr />
-          </div>
-          <div class="col-12 col-md-12 text-center">&copy; Copyright 2022 wdf3321 Change - All rights reserved</div>
-        </div>
-        </div>
-        </section>
-        </body>
+    </body>
 </html>
