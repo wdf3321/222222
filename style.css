@@ -1,0 +1,137 @@
+:root {
+  --bs-coffee-rgb: 60, 40, 0;
+}
+.carousel-inner{
+
+height: 75%;}
+.bg-coffee {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-coffee-rgb), var(--bs-bg-opacity)) !important;
+}
+
+#asd .carousel-item img {
+  object-fit: cover;
+}
+
+#kard {
+  height: 75vh;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+#section01 {
+  height: 75vh;
+  margin-top: 16vh;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  #section01 > .container-fluid .col-lg-7 {
+    border-right: 10px solid #fff;
+  }
+  #section01 > .container-fluid {
+    background-image: url(./bg-image-08.jpg);
+    height: 60vh;
+  }
+
+  #section01 > .container-fluid .col:nth-child(1) {
+    border-bottom: 10px solid #fff;
+  }
+}
+#section02 > .container-fluid {
+  height: 50vh;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #section01 > .container-fluid {
+    background-image: url(./bg-image-08.jpg);
+    height: 60vh;
+  }
+  #section01 > .container-fluid .col-lg-7 {
+    border-bottom: 10px solid #fff;
+  }
+  #section01 > .container-fluid .col:nth-child(1) {
+    border-bottom: 10px solid #fff;
+  }
+}
+#section02 {
+  height: 200vh;
+}
+#section02 > .container-fluid {
+  height: 100vh;
+}
+#section03 > .container-fluid > .row {
+  height: 155vh;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .carousel-item img {
+    height: 75% !important;
+  }
+  #section01 {
+    height: 160vh;
+  }
+
+  #section01 .container-fluid {
+    background-image: url(./bg-image-08.jpg);
+    height: 150vh;
+  }
+  #section01 .col-12 {
+    border-bottom: 10px solid #fff;
+  }
+  #section01 .col-12 .col:nth-child(1) {
+    border-bottom: 10px solid #fff;
+  }
+  #section02 {
+    height: 165vh;
+  }
+  #section02 > .container-fluid {
+    height: 100vh;
+  }
+  #section03 {
+    height: 225vh;
+  }
+  #section04 {
+    height: 200vh;
+  }
+  #section04  .container{
+    height: 100vh;
+  }
+  #section04 .nav-tabs {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #section04 .nav-item {
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  #section04 .tab-content .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  #section04 .tab-content .body{
+
+  
+  }
+
+  #section05 {
+    height: 85vh;
+    margin-bottom: 2rem !important;
+  }
+  #footer {
+    height: 50vh;
+  }
+}
