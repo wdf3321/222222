@@ -6024,7 +6024,7 @@ textarea.form-control-lg {
   z-index: 1050;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 50%;
   visibility: hidden;
   background-color: #fff;
   background-clip: padding-box;

@@ -21,14 +21,58 @@
 		navbar-dark 文字變成白色
 				-->
     <script src="./bootstrap.bundle.js"></script>
+    <!-- NAVBAR -->
     <section id="nav">
       <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
         <div class="container-fluid justify-content-start d-flex">
           <!-- container-fluid 滿版 container 固定寬度 -->
-          <!-- 漢堡按鈕 -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <button class="btn btn-coffee" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- canvas -->
+          <div class="offcanvas offcanvas-start bg-coffee" tabindex="-1" id="offcanvas">
+            <div class="offcanvas-header"><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" href="#section01">HOME</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#section04">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button"
+                    data-bs-toggle="dropdown">SERVICES</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Paintings</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button"
+                    data-bs-toggle="dropdown">GALLERY</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#section05">CONTACTS</a>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                    <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- navbar no1 -->
           <span class="d-lg-inline-block d-none m-4" style="color: #fff">
             Follow us :
             <i class="bi bi-telephone-fill mx-2"></i>
@@ -46,22 +90,36 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
               <li class="nav-item mx-4">
-                <a class="nav-link active" href="#section01">菜單餐點</a>
+                <a class="nav-link active" href="#section01">HOME</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#section02">周邊景點</a>
+                <a class="nav-link" href="#section04">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Services</a></li>
+                  <li><a class="dropdown-item" href="#">Paintings</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                </ul>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#section04">莊園位置</a>
+                <a class="nav-link" href="#section05">CONTACTS</a>
               </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#section05">聯絡我們</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#section05">聯絡我們</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#section05">聯絡我們</a>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -87,13 +145,13 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
     <!----------------->
     <section id="section02">
       <div class="container-fluid d-flex">
         <div class="row d-flex h-100 p-0">
           <div class="col-12 col-lg-7 p-0 h-75">
-            <iframe class="w-100 h-100" width="1024" height="1024" src="https://www.youtube.com/embed/BZ2LrQtno70"
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -282,29 +340,29 @@
               <div class="footer">Jane Neddery Manager</div>
               <div class="carousel-caption d-block">
                 <img src="https://picsum.photos/100/100/?random=10" />
-                </div>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                </div>
-                </div>
-                </section>
-                <section id="section05">
-                  <div class="container-fluid">
-                    <h2 class="text-center">Our Blog</h2>
-                    <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#asd2" data-bs-slide-to="0" class="active d-none">1</button>
-                        <button type="button" data-bs-target="#asd2" data-bs-slide-to="1" class="d-none">2</button>
-                        <button type="button" data-bs-target="#asd2" data-bs-slide-to="2" class="d-none">3</button>
-                      </div>
+              </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              </div>
+              </div>
+              </section>
+              <section id="section05">
+                <div class="container-fluid">
+                  <h2 class="text-center">Our Blog</h2>
+                  <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="0" class="active d-none">1</button>
+                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="1" class="d-none">2</button>
+                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="2" class="d-none">3</button>
+                    </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="header"><img class="w-100" src="https://picsum.photos/1920/1080/?random=10" /></div>
@@ -367,18 +425,22 @@
       </div>
     </section>
     <section id="gmap">
-      <div class="container-fluid">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987774.8409296945!2d0.27789576790852205!3d52.380629111184575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c92db5345b%3A0xe6fdc64e9d7c1bd6!2sBarney&#39;s%20Coffeeshop%20Amsterdam!5e0!3m2!1szh-TW!2stw!4v1672126987781!5m2!1szh-TW!2stw"
-        width="980" height="980" style="border: 0" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="container-fluid h-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987774.8409296945!2d0.27789576790852205!3d52.380629111184575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c92db5345b%3A0xe6fdc64e9d7c1bd6!2sBarney&#39;s%20Coffeeshop%20Amsterdam!5e0!3m2!1szh-TW!2stw!4v1672126987781!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          class="w-100 h-100"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
     <section id="section06" class="px-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <span class="fs-2">Contact US</span>
-            <hr>
+            <hr />
             <p class="fs-6">
               <i class="bi bi-geo-alt-fill"></i>
               6036 Richmond hwy., Alexandria, VA, 2230
@@ -391,13 +453,13 @@
           </div>
           <div class="col-12">
             <span class="fs-2">OPENING HOURS</span>
-            <hr>
+            <hr />
             <p class="fs-6">Weekdays: 8:00–20:00</p>
             <p class="fs-6">Weekdays: 8:00–18:00</p>
           </div>
           <div class="col-12">
             <span class="fs-2">NAVIGATION</span>
-            <hr>
+            <hr />
             <p class="fs-6">Home</p>
             <p class="fs-6">About Us</p>
             <p class="fs-6">Gallery</p>
@@ -405,7 +467,7 @@
             <p class="fs-6">Contacts</p>
             <p class="fs-6">Pages</p>
           </div>
-          <hr>
+          <hr />
           <div class="col-12 d-flex flex-column">
             <span class="">
               Follow us :

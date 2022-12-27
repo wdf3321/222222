@@ -141,7 +141,7 @@ width: 100%;
     height: 100vh;
   }
   #section03 {
-    height: 225vh;
+    height: 240vh;
   }
   #section04 {
     height: 200vh;
@@ -154,14 +154,14 @@ width: 100%;
   }
 
   #section05 {
-    height: 100vh;
+    height: 75vh;
     margin-bottom: 2rem !important;
   }
   #gmap{
-  height: 120vh;
+  height: 50vh;
   }
   #section06 {
-    height: 100vh;
+    height: 125vh;
     background: rgb(54, 61, 65);
     color: #fff;
     padding-top: 5rem;
