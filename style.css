@@ -61,9 +61,15 @@
   color: #af9f7b;
 }
 
+#gmap{
+width: 100%;
+}
 #section06 {
   background: rgb(54, 61, 65);
   color: #fff;
+  width: 100%;
+}
+#section06 span{
 }
 
 /* ---------------------------------------------- */
@@ -148,17 +154,20 @@
   }
 
   #section05 {
-    height: 85vh;
+    height: 100vh;
     margin-bottom: 2rem !important;
   }
+  #gmap{
+  height: 120vh;
+  }
   #section06 {
-    height: 90vh;
+    height: 100vh;
     background: rgb(54, 61, 65);
     color: #fff;
     padding-top: 5rem;
+    
   }
   #section06 .fs-2 {
-    border-bottom: 5px solid #fff;
   }
 
   
