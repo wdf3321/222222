@@ -26,15 +26,15 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
         <div class="container-fluid justify-content-start d-flex">
           <!-- container-fluid 滿版 container 固定寬度 -->
-          <button class="btn btn-coffee" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+          <button class="btn btn-coffee d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- canvas -->
           <div class="offcanvas offcanvas-start bg-coffee" tabindex="-1" id="offcanvas">
-            <div class="offcanvas-header"><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-            </div>
+            <div class="offcanvas-header"><button type="button" class="btn-close bg-light text-reset"
+                data-bs-dismiss="offcanvas"></button></div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+              <ul class="navbar-nav mb-2 mb-lg-0 m-auto flex-lg-column">
                 <li class="nav-item mx-4">
                   <a class="nav-link active" href="#section01">HOME</a>
                 </li>
@@ -42,17 +42,15 @@
                   <a class="nav-link" href="#section04">ABOUT US</a>
                 </li>
                 <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button"
-                    data-bs-toggle="dropdown">SERVICES</a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
+                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                     <li><a class="dropdown-item" href="#">Services</a></li>
                     <li><a class="dropdown-item" href="#">Paintings</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button"
-                    data-bs-toggle="dropdown">GALLERY</a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                     <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
                     <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
                     <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
@@ -63,7 +61,7 @@
                 </li>
                 <li class="nav-item dropdown mx-4">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
+                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                     <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
                     <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
                     <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
@@ -97,14 +95,14 @@
               </li>
               <li class="nav-item dropdown mx-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                   <li><a class="dropdown-item" href="#">Services</a></li>
                   <li><a class="dropdown-item" href="#">Paintings</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown mx-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                   <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
                   <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
                   <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
@@ -115,7 +113,7 @@
               </li>
               <li class="nav-item dropdown mx-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
                   <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
                   <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
                   <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
@@ -151,8 +149,7 @@
       <div class="container-fluid d-flex">
         <div class="row d-flex h-100 p-0">
           <div class="col-12 col-lg-7 p-0 h-75">
-            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70"
-              title="YouTube video player" frameborder="0"
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70" title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
@@ -186,183 +183,195 @@
     </section>
     <section id="section04">
       <div class="container">
-        <h2 class="text-center">our prices</h2>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" type="button">GRAPHIC ARTS</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact" type="button">SCULPTURES</button>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="home">
-            <div class="header">
-              <div class="title">Paper/Ink</div>
-              <div class="price">35$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Drawings in ink have been amazingly popular during the twentieth century and today they serve as the #1 decoration for
-              homes and offices
-              whose owners can’t afford big or full-colored paintings.
-            </div>
-            <div class="header">
-              <div class="title">Paper/Watercolor</div>
-              <div class="price">35$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Watercolor is the #1 painting technique we were taught at school. With the development of equipment and supplies for
-              painting, this
-              genre has become more varied than any other type of paintings.
-            </div>
-            <div class="header">
-              <div class="title">Paper/Pencil</div>
-              <div class="price">35$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Nowadays, pencil is used not only in making sketches for future paintings but also for creating absolutely spectacular
-              artworks that
-              compliment any interior or art collection.
-            </div>
-          </div>
-          <div class="tab-pane fade" id="profile">
-            <div class="header">
-              <div class="title">Canvas/Acrylic</div>
-              <div class="price">95$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Acrylic paintings are the most popular among our artists, their clients, and our gallery visitors. This type of
-              paintings is safe for
-              your health and is less affected by heat, while expressing a vast range of colours.
-            </div>
-            <div class="header">
-              <div class="title">Canvas/Oil</div>
-              <div class="price">95$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Being a basic painting material for artists since ancient times, oil provides great possibilities even today. Its
-              transparency, opacity,
-              and translucency allow to create the most captivating color fusions.
-            </div>
-            <div class="header">
-              <div class="title">Canvas/Mixed Technique</div>
-              <div class="price">95$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              A mixed media painting is one which combines different painting and drawing materials and methods, rather than only one
-              medium. Such
-              artworks are becoming more popular due to artists’ intense creativity.
-            </div>
-          </div>
-          <div class="tab-pane fade" id="contact">
-            <div class="header">
-              <div class="title">Granite</div>
-              <div class="price">48$</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Granite sculptures are the oldest creative artworks based on stone carving, an activity available to humans since the
-              dawn of times.
-              This stone allows to create amazing and long-lasting sculptures.
-            </div>
-            <div class="header">
-              <div class="title">Acrylic</div>
-              <div class="price">$26</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Acrylic sculptures are the result of active technology development. This material can be found in objects and things we
-              all use but when
-              it comes to sculpting, acryl offers outstanding flexibility.
-            </div>
-            <div class="header">
-              <div class="title">Steel</div>
-              <div class="price">$26</div>
-            </div>
-            <div class="body fs-6 mt-3">
-              Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
-              sophisticated.
-              Moreover, this material is sustainable and perfectly suites any interior/exterior.
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ------------------------------------------- -->
-      <div class="container-fluid" style="height: 100vh">
-        <br />
-        <h2 class="text-center my-5">Testimonials</h2>
-        <hr />
-        <div id="asd" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#asd" data-bs-slide-to="0" class="active d-none">1</button>
-            <button type="button" data-bs-target="#asd" data-bs-slide-to="1" class="d-none">2</button>
-            <button type="button" data-bs-target="#asd" data-bs-slide-to="2" class="d-none">3</button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="header">All kinds of art styles and paintings</div>
-              <div class="body">
-                I love your exhibitions; there are many different styles of paintings and a big range of types of art with affordable
-                prices. Seeing
-                so much variety of art is exciting and there’s something for everyone. I’ve never been to a gallery before, but after
-                visiting your
-                gallery I fell in love with fine art.
-              </div>
-              <div class="footer">bryan adams jouralist</div>
-              <div class="carousel-caption d-block">
-                <img src="https://picsum.photos/100/100/?random=10" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="header">Great atmosphere and lots of impressive paintings</div>
-              <div class="body">
-                My friend is an art connoisseur, so she brought me here and I’m amazed. I got to see so many different types of
-                beautiful art in one
-                place, so I’m thrilled and I feel like Art Gallery helps me develop my taste for art. I think it’s nice that there’s a
-                big range of
-                prices and I’m considering buying a painting here.
-              </div>
-              <div class="footer">ANNA BROWN programmer</div>
-              <div class="carousel-caption d-block">
-                <img src="https://picsum.photos/100/100/?random=9" />
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="header">The best art gallery in the whole state!</div>
-              <div class="body">
-                I’ve been looking for art for quite some time and I went to your gallery last month. It’s a nice space, easy to walk
-                around and some
-                of the artists’ work is very, very nice. I’ve been very lucky today, I’ve bought four pieces. The pieces are from
-                different coutnries.
-                I’d recommend everyone to come here. That’s exactly what I like in your gallery.
-              </div>
-              <div class="footer">Jane Neddery Manager</div>
-              <div class="carousel-caption d-block">
-                <img src="https://picsum.photos/100/100/?random=10" />
-              </div>
-              </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              </div>
-              </div>
-              </section>
-              <section id="section05">
-                <div class="container-fluid">
-                  <h2 class="text-center">Our Blog</h2>
-                  <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="0" class="active d-none">1</button>
-                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="1" class="d-none">2</button>
-                      <button type="button" data-bs-target="#asd2" data-bs-slide-to="2" class="d-none">3</button>
+        <div class="row">
+          <div class="col-lg-6 h-100">
+            <h2 class="text-center">our prices</h2>
+            <ul class="nav nav-tabs flex-lg-row m-lg-3">
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile" type="button">GRAPHIC ARTS</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact" type="button">SCULPTURES</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home">
+                <div class="header">
+                  <div class="title">Paper/Ink</div>
+                  <div class="price">35$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Drawings in ink have been amazingly popular during the twentieth century and today they serve as the #1 decoration
+                  for
+                  homes and
+                  offices whose owners can’t afford big or full-colored paintings.
+                  </div>
+                  <div class="header">
+                    <div class="title">Paper/Watercolor</div>
+                    <div class="price">35$</div>
+                  </div>
+                  <div class="body fs-6 mt-3">
+                    Watercolor is the #1 painting technique we were taught at school. With the development of equipment and supplies for
+                    painting, this
+                    genre has become more varied than any other type of paintings.
+                  </div>
+                  <div class="header">
+                    <div class="title">Paper/Pencil</div>
+                    <div class="price">35$</div>
+                  </div>
+                  <div class="body fs-6 mt-3">
+                    Nowadays, pencil is used not only in making sketches for future paintings but also for creating absolutely spectacular
+                    artworks that
+                    compliment any interior or art collection.
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="profile">
+                    <div class="header">
+                      <div class="title">Canvas/Acrylic</div>
+                      <div class="price">95$</div>
                     </div>
+                    <div class="body fs-6 mt-3">
+                      Acrylic paintings are the most popular among our artists, their clients, and our gallery visitors. This type of
+                  paintings is safe
+                  for your health and is less affected by heat, while expressing a vast range of colours.
+                  </div>
+                  <div class="header">
+                    <div class="title">Canvas/Oil</div>
+                    <div class="price">95$</div>
+                  </div>
+                  <div class="body fs-6 mt-3">
+                    Being a basic painting material for artists since ancient times, oil provides great possibilities even today. Its
+                  transparency,
+                  opacity, and translucency allow to create the most captivating color fusions.
+                  </div>
+                  <div class="header">
+                    <div class="title">Canvas/Mixed Technique</div>
+                    <div class="price">95$</div>
+                  </div>
+                  <div class="body fs-6 mt-3">
+                    A mixed media painting is one which combines different painting and drawing materials and methods, rather than only
+                    one
+                    medium. Such
+                    artworks are becoming more popular due to artists’ intense creativity.
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                      <div class="header">
+                        <div class="title">Granite</div>
+                        <div class="price">48$</div>
+                      </div>
+                      <div class="body fs-6 mt-3">
+                      Granite sculptures are the oldest creative artworks based on stone carving, an activity available to humans since
+                      the
+                      dawn of times.
+                      This stone allows to create amazing and long-lasting sculptures.
+                      </div>
+                      <div class="header">
+                        <div class="title">Acrylic</div>
+                        <div class="price">$26</div>
+                      </div>
+                      <div class="body fs-6 mt-3">
+                      Acrylic sculptures are the result of active technology development. This material can be found in objects and things
+                      we
+                      all use but
+                      when it comes to sculpting, acryl offers outstanding flexibility.
+                      </div>
+                      <div class="header">
+                        <div class="title">Steel</div>
+                        <div class="price">$26</div>
+                      </div>
+                      <div class="body fs-6 mt-3">
+                        Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
+                        sophisticated.
+                        Moreover, this material is sustainable and perfectly suites any interior/exterior.
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+          <div class="col-lg-6">
+            <div class="row h-100">
+              <h2 class="text-center my-5">Testimonials</h2>
+              <hr />
+              <div id="asd" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="0" class="active d-none">1</button>
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="1" class="d-none">2</button>
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="2" class="d-none">3</button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="header">All kinds of art styles and paintings</div>
+                    <div class="body">
+                      I love your exhibitions; there are many different styles of paintings and a big range of types of art with
+                      affordable
+                      prices.
+                      Seeing so much variety of art is exciting and there’s something for everyone. I’ve never been to a gallery before, but
+                      after
+                      visiting your gallery I fell in love with fine art.
+                      </div>
+                      <div class="footer">bryan adams jouralist</div>
+                      <div class="carousel-caption d-block">
+                        <img src="https://picsum.photos/100/100/?random=10" />
+                      </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="header">Great atmosphere and lots of impressive paintings</div>
+                        <div class="body">
+                          My friend is an art connoisseur, so she brought me here and I’m amazed. I got to see so many different types of
+                      beautiful art in
+                      one place, so I’m thrilled and I feel like Art Gallery helps me develop my taste for art. I think it’s nice that there’s
+                      a big
+                      range of prices and I’m considering buying a painting here.
+                      </div>
+                      <div class="footer">ANNA BROWN programmer</div>
+                      <div class="carousel-caption d-block">
+                        <img src="https://picsum.photos/100/100/?random=9" />
+                      </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="header">The best art gallery in the whole state!</div>
+                        <div class="body">
+                          I’ve been looking for art for quite some time and I went to your gallery last month. It’s a nice space, easy to walk
+                      around and
+                      some of the artists’ work is very, very nice. I’ve been very lucky today, I’ve bought four pieces. The pieces are from
+                      different
+                      coutnries. I’d recommend everyone to come here. That’s exactly what I like in your gallery.
+                      </div>
+                      <div class="footer">Jane Neddery Manager</div>
+                      <div class="carousel-caption d-block">
+                        <img src="https://picsum.photos/100/100/?random=10" />
+                      </div>
+                      </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <!-- ------------------------------------------- -->
+          
+          <br />
+    </section>
+    <section id="section05">
+      <div class="container-fluid">
+        <h2 class="text-center">Our Blog</h2>
+        <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#asd2" data-bs-slide-to="0" class="active d-none">1</button>
+            <button type="button" data-bs-target="#asd2" data-bs-slide-to="1" class="d-none">2</button>
+            <button type="button" data-bs-target="#asd2" data-bs-slide-to="2" class="d-none">3</button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="header"><img class="w-100" src="https://picsum.photos/1920/1080/?random=10" /></div>
