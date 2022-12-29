@@ -12,7 +12,20 @@
 #asd .carousel-item img {
   object-fit: cover;
 }
-
+.card {
+  border: 0;
+  padding: 0;
+  height: 50%;
+}
+.card-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
 #kard {
   height: 75vh;
   justify-content: space-evenly;
@@ -26,6 +39,8 @@
   margin-top: 16vh;
   color: #fff;
 }
+#section03{
+height: 125vh;}
 #section04 .nav-tabs {
   display: flex;
   margin-left: auto;
@@ -89,10 +104,17 @@
   #section02 > .container-fluid {
     height: 50vh;
   }
+  #section03 .col-12:nth-child(1) .card{
+    height: 110vh;
+    }
+    #section03 .col-12:nth-child(2) .card{
+      height: 110vh;
+      }
   #section04 > .container > .row {
   }
-  #section04 > .container-fluid{
-  width: 50%;
+
+  #section04 > .container-fluid {
+    width: 50%;
   }
 }
 
@@ -114,21 +136,22 @@
 #section02 > .container-fluid {
   height: 100vh;
 }
-#section03 > .container-fluid > .row {
-  height: 155vh;
+#section03 {
+  height: 200vh;
 }
-#section04{
-height: 150vh;
+#section03 .col-12 .card{
+height: 50vh;
 }
-#section04 .container .row .col-lg-6:nth-child(2){
-height: 125vh;
+
+
+#section04 {
+  height: 170vh;
+}
+#section04 .container .row .col-lg-6:nth-child(2) {
+  height: 125vh;
 }
 
 @media (max-width: 767px) {
-  .card {
-    width: 100% !important;
-    height: 80% !important;
-  }
   .carousel-item img {
     height: 75% !important;
   }
@@ -154,6 +177,9 @@ height: 125vh;
   }
   #section03 {
     height: 240vh;
+  }
+  #section03 .col-12 .card{
+  height: 40vh;
   }
   #section04 {
     height: 200vh;
