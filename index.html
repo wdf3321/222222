@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" />
     <style></style>
   </head>
 
@@ -129,17 +131,17 @@
     <section id="section01" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-1000">
       <div class="container-fluid">
         <div class="row d-flex h-100 m-0">
-          <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center flex-column">
+          <div id="left" class="col-12 col-lg-7 d-flex justify-content-center align-items-center flex-column">
             <h1>ART GALLERY</h1>
             <h5>showcasing the best works of modern art</h5>
             <button type="button" class="btn btn-primary">Primary</button>
           </div>
-          <div class="col-12 col-lg-5 p-0 d-flex justify-content-center align-items-center flex-column">
+          <div id="right" class="col-12 col-lg-5 p-0 d-flex justify-content-center align-items-center flex-column">
             <div class="col d-flex justify-content-center align-items-center h-100 w-100">
-              <h1 class="">event</h1>
+              <h1 class="">Event</h1>
             </div>
             <div class="col d-flex justify-content-center align-items-center h-100">
-              <h1 class="d-block">event</h1>
+              <h1 class="d-block">Exbitions</h1>
             </div>
           </div>
         </div>
@@ -182,7 +184,7 @@
               </p>
             </div>
           </div>
-        
+
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card">
               <div class="card-img-overlay">
@@ -196,7 +198,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 ">
+          <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-50">
               <div class="card-img-overlay">
                 <img src="https://picsum.photos/800/800/?random=10" />
@@ -231,27 +233,29 @@
                 <i class="bi bi-eye-fill"></i>
                 220
               </p>
+            </div>
+            <div class="card h-50">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/800/800/?random=10" />
               </div>
-              <div class="card h-50">
-                <div class="card-img-overlay">
-                  <img src="https://picsum.photos/800/800/?random=10" />
-                </div>
-                <p class="card-text">
-                  <i class="bi bi-hand-thumbs-up-fill"></i>
-                  346
-                  <i class="bi bi-eye-fill"></i>
-                  220
-                </p>
-              </div>
-              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+            </div>
+        </div>
+        </div>
     </section>
     <section id="section04">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100">
-            <h2 class="text-center">our prices</h2>
-            <ul class="nav nav-tabs flex-lg-row m-lg-3">
-              <li class="nav-item">
+            <h2 class="text-center m-2">Our Prices</h2>
+            <ul class="nav nav-tabs flex-lg-row m-lg-3 pb-5">
+              <li class="nav-item ">
                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
               </li>
               <li class="nav-item">
@@ -280,23 +284,23 @@
                   Watercolor is the #1 painting technique we were taught at school. With the development of equipment and supplies for
                   painting, this
                   genre has become more varied than any other type of paintings.
-                  </div>
-                  <div class="header">
-                    <div class="title">Paper/Pencil</div>
-                    <div class="price">35$</div>
-                  </div>
-                  <div class="body fs-6 mt-3">
+                </div>
+                <div class="header">
+                  <div class="title">Paper/Pencil</div>
+                  <div class="price">35$</div>
+                </div>
+                <div class="body fs-6 mt-3">
                   Nowadays, pencil is used not only in making sketches for future paintings but also for creating absolutely spectacular
                   artworks that
                   compliment any interior or art collection.
+                </div>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                  <div class="header">
+                    <div class="title">Canvas/Acrylic</div>
+                    <div class="price">95$</div>
                   </div>
-                  </div>
-                  <div class="tab-pane fade" id="profile">
-                    <div class="header">
-                      <div class="title">Canvas/Acrylic</div>
-                      <div class="price">95$</div>
-                    </div>
-                    <div class="body fs-6 mt-3">
+                  <div class="body fs-6 mt-3">
                   Acrylic paintings are the most popular among our artists, their clients, and our gallery visitors. This type of
                   paintings is safe
                   for your health and is less affected by heat, while expressing a vast range of colours.
@@ -318,42 +322,42 @@
                   A mixed media painting is one which combines different painting and drawing materials and methods, rather than only one
                   medium. Such
                   artworks are becoming more popular due to artists’ intense creativity.
+                </div>
+                </div>
+                <div class="tab-pane fade" id="contact">
+                  <div class="header">
+                    <div class="title">Granite</div>
+                    <div class="price">48$</div>
                   </div>
-                  </div>
-                  <div class="tab-pane fade" id="contact">
-                    <div class="header">
-                      <div class="title">Granite</div>
-                      <div class="price">48$</div>
-                    </div>
-                    <div class="body fs-6 mt-3">
+                  <div class="body fs-6 mt-3">
                   Granite sculptures are the oldest creative artworks based on stone carving, an activity available to humans since the
                   dawn of times.
                   This stone allows to create amazing and long-lasting sculptures.
-                  </div>
-                  <div class="header">
-                    <div class="title">Acrylic</div>
-                    <div class="price">$26</div>
-                  </div>
-                  <div class="body fs-6 mt-3">
+                </div>
+                <div class="header">
+                  <div class="title">Acrylic</div>
+                  <div class="price">$26</div>
+                </div>
+                <div class="body fs-6 mt-3">
                   Acrylic sculptures are the result of active technology development. This material can be found in objects and things we
                   all use but
                   when it comes to sculpting, acryl offers outstanding flexibility.
-                  </div>
-                  <div class="header">
-                    <div class="title">Steel</div>
-                    <div class="price">$26</div>
-                  </div>
-                  <div class="body fs-6 mt-3">
-                    Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
-                    sophisticated.
-                    Moreover, this material is sustainable and perfectly suites any interior/exterior.
-                  </div>
-                  </div>
+                </div>
+                <div class="header">
+                  <div class="title">Steel</div>
+                  <div class="price">$26</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
+                  sophisticated.
+                  Moreover, this material is sustainable and perfectly suites any interior/exterior.
                   </div>
                   </div>
-          <div class="col-lg-6">
+                  </div>
+                  </div>
+          <div class="col-lg-6 h-100">
             <div class="row h-100">
-              <h2 class="text-center my-5">Testimonials</h2>
+              <h2 class="text-center py-5">Testimonials</h2>
               <hr />
               <div id="asd" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
                 <div class="carousel-indicators">
@@ -379,8 +383,8 @@
                     <div class="carousel-caption d-block">
                       <img src="https://picsum.photos/100/100/?random=10" />
                     </div>
-                    </div>
-                    <div class="carousel-item">
+                  </div>
+                  <div class="carousel-item">
                     <div class="header">
                       <img class="mb-4" src="./quote-img-01-49x45.png" alt="" />
                       <br />
@@ -397,8 +401,8 @@
                     <div class="carousel-caption d-block">
                       <img src="https://picsum.photos/100/100/?random=9" />
                     </div>
-                    </div>
-                    <div class="carousel-item">
+                  </div>
+                  <div class="carousel-item">
                     <div class="header">
                       <img class="mb-4" src="./quote-img-01-49x45.png" alt="" />
                       <br />
@@ -415,27 +419,27 @@
                     <div class="carousel-caption d-block">
                       <img src="https://picsum.photos/100/100/?random=10" />
                     </div>
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                  </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        <!-- ------------------------------------------- -->
-        
-        <br />
+      </div>
+      <!-- ------------------------------------------- -->
+      
+      <br />
     </section>
     <section id="section05">
-      <div class="container-fluid">
+      <div class="container-fluid container-lg">
         <h2 class="text-center">Our Blog</h2>
         <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
           <div class="carousel-indicators">
@@ -510,7 +514,10 @@
           <div class="col-lg-6 col-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987774.8409296945!2d0.27789576790852205!3d52.380629111184575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c92db5345b%3A0xe6fdc64e9d7c1bd6!2sBarney&#39;s%20Coffeeshop%20Amsterdam!5e0!3m2!1szh-TW!2stw!4v1672126987781!5m2!1szh-TW!2stw"
-              style="border: 0" allowfullscreen="true" loading="lazy" class="w-100 h-100"
+              style="border: 0"
+              allowfullscreen="true"
+              loading="lazy"
+              class="w-100 h-100"
               width="1000"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -547,23 +554,29 @@
                 <p class="fs-6 col-4">Contacts</p>
                 <p class="fs-6 col-4">Pages</p>
               </div>
-              </div>
-              <hr />
-              <div class="col-12 d-flex flex-column">
-                <span class="">
-                  Follow us :
-                  <i class="bi bi-telephone-fill mx-2"></i>
-                  <i class="bi bi-twitter mx-2"></i>
-                  <i class="bi bi-github mx-2"></i>
-                </span>
-                <span>wdf3321 &copy; 2022</span>
-                <span>PRIVACY POLICY</span>
+            </div>
+            <hr />
+            <div class="col-12 d-flex flex-column">
+              <span class="">
+                Follow us :
+                <i class="bi bi-telephone-fill mx-2"></i>
+                <i class="bi bi-twitter mx-2"></i>
+                <i class="bi bi-github mx-2"></i>
+              </span>
+              <span>wdf3321 &copy; 2022</span>
+              <span>PRIVACY POLICY</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"></script>
     <script>
                                                                                         AOS.init()
     </script>
