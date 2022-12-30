@@ -17,6 +17,7 @@
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
+  --bs-add:rgb(175,159,123);
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
   --bs-primary: #0d6efd;
@@ -2945,6 +2946,12 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+.btn-add{
+  color: #fff;
+background:rgb(175,159,123);
+border-color: rgb(175,159,123);
+
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #0b5ed7;
@@ -5750,7 +5757,7 @@ textarea.form-control-lg {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow:visible
 }
 .carousel-inner::after {
   display: block;
@@ -5927,7 +5934,7 @@ textarea.form-control-lg {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: -10rem;
+  top: 15rem;
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;

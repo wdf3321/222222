@@ -1,5 +1,5 @@
 :root {
-  --bs-coffee-rgb: 60, 40, 0;
+  --bs-coffee-rgb: 80, 60, 0;
 }
 .carousel-inner {
   height: 75%;
@@ -38,6 +38,12 @@
   height: 75vh;
   margin-top: 16vh;
   color: #fff;
+}
+#about {
+  background: #ddd;
+}
+#about2 {
+  background-color: #af9f7b;
 }
 #section03 {
   height: 125vh;
@@ -90,10 +96,29 @@
 }
 #section06 span {
 }
+.carousel-caption img{
+border-radius: 50%;
+}
 
 /* ---------------------------------------------- */
 
 @media (min-width: 992px) {
+  #more {
+    width: 220px;
+    height: 70px;
+  }
+  #about2 {
+    width: 220px;
+    height: 70px;
+    background-color: #af9f7b;
+  }
+  #h2 {
+    display: inline-flex;
+    position: absolute;
+    top: 0%;
+    right: 80%;
+  }
+
   #section01 > .container-fluid .col-lg-5 {
     border-left: 20px solid #fff;
   }
@@ -105,33 +130,54 @@
   #section01 > .container-fluid .col:nth-child(1) {
     border-bottom: 20px solid #fff;
   }
-  #section01 #right{
-  transform: skew(336deg);
+  #section01 #right {
+    transform: skew(336deg);
   }
-  #section01 #right h1{
+  #section01 #right h1 {
     transform: skew(24deg);
-    }
+  }
   #section02 > .container-fluid {
-    height: 50vh;
+    height: 85vh;
+  }
+  #section02 {
+    height: 85vh;
+  }
+  #section03 {
+    height: 105vh;
   }
   #section03 .col-12:nth-child(1) .card {
-    height: 110vh;
+    height: 90vh;
   }
   #section03 .col-12:nth-child(2) .card {
-    height: 110vh;
+    height: 90vh;
   }
-  #section04 > .container > .row {
+  #section04 {
+    height: 80vh;
+    background: #eee;
   }
-
-  #section04 > .container-fluid {
-    width: 50%;
+  #asd {
+    height: 550px;
+  }
+  #section04 .nav {
+    padding-bottom: 5.5rem !important;
+  }
+  #section05 {
+    margin-top: 3rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  #section01 > .container-fluid {
+  #more {
+    width: 220px;
+    height: 70px;
+  }
+  #section01 #left {
     background-image: url(./bg-image-08.jpg);
-    height: 60vh;
+    height: 30vh;
+  }
+  #section01 #right {
+    background-image: url(./bg-image-08.jpg);
+    height: 30vh;
   }
   #section01 > .container-fluid .col-lg-7 {
     border-bottom: 10px solid #fff;
@@ -139,28 +185,36 @@
   #section01 > .container-fluid .col:nth-child(1) {
     border-bottom: 10px solid #fff;
   }
-}
-#section02 {
-  height: 200vh;
-}
-#section02 > .container-fluid {
-  height: 100vh;
-}
-#section03 {
-  height: 200vh;
-}
-#section03 .col-12 .card {
-  height: 50vh;
-}
+  #section02 {
+    height: 165vh;
+  }
+  #section02 > .container-fluid {
+    height: 100vh;
+    width: auto;
+  }
+  #section03 .col-12 .card {
+    height: 50vh !important;
+  }
+  #section03 {
+    height: 175vh;
+  }
+  #section04 {
+    height: 135vh;
+  }
 
-#section04 {
-  height: 170vh;
-}
-#section04 .container .row .col-lg-6:nth-child(2) {
-  height: 125vh;
+  #section04 .container .row .col-lg-6:nth-child(2) {
+    height: 125vh;
+  }
+  #section04 .carousel-inner {
+    height: 75vh;
+  }
 }
 
 @media (max-width: 767px) {
+  #more {
+    width: 200px;
+    height: 50px;
+  }
   .carousel-item img {
     height: 75% !important;
   }
@@ -169,13 +223,12 @@
   }
 
   #section01 .container-fluid {
-    
     height: 150vh;
   }
-  #section01 #left{
+  #section01 #left {
     background-image: url(./bg-image-08.jpg);
   }
-  #section01 #right{
+  #section01 #right {
     background-image: url(./bg-image-08.jpg);
   }
 
@@ -192,10 +245,10 @@
     height: 100vh;
   }
   #section03 {
-    height: 240vh;
+    height: 250vh;
   }
   #section03 .col-12 .card {
-    height: 40vh;
+    height: 40vh !important;
   }
   #section04 {
     height: 200vh;
@@ -207,9 +260,14 @@
   #section04 .col-lg-6 {
     height: 100vh;
   }
-
+  #section04 .carousel-inner {
+    height: 60vh;
+  }
+  .carousel-caption {
+    top: 20rem !important;
+  }
   #section05 {
-    height: 75vh;
+    height: 50vh;
     margin-bottom: 2rem !important;
   }
   #gmap {

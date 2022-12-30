@@ -131,10 +131,11 @@
     <section id="section01" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-1000">
       <div class="container-fluid">
         <div class="row d-flex h-100 m-0">
-          <div id="left" class="col-12 col-lg-7 d-flex justify-content-center align-items-center flex-column">
+          <div id="left"
+            class="col-12 col-lg-7 d-flex flex-wrap justify-content-center align-items-center align-items-lg-start align-content-lg-center flex-column">
             <h1>ART GALLERY</h1>
             <h5>showcasing the best works of modern art</h5>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button id="more" type="button" class="btn btn-add">Learn more</button>
           </div>
           <div id="right" class="col-12 col-lg-5 p-0 d-flex justify-content-center align-items-center flex-column">
             <div class="col d-flex justify-content-center align-items-center h-100 w-100">
@@ -157,11 +158,11 @@
               allowfullscreen></iframe>
           </div>
           <div
-            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center bg-secondary h-75">
+            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center h-75" style="background-color: #bbb;">
             <h1>About Us</h1>
             <h3>Art Gallery is one of the country’s finest art museums welcoming over half a million visitors each year.</h3>
             <h3>Weekdays: 8:00–20:00 Weekends: 9:00–18:00</h3>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" id="about2" class="btn btn-add">Learn more</button>
           </div>
         </div>
       </div>
@@ -250,11 +251,12 @@
         </div>
     </section>
     <section id="section04">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 h-100">
-            <h2 class="text-center m-2">Our Prices</h2>
-            <ul class="nav nav-tabs flex-lg-row m-lg-3 pb-5">
+            <h2 class="text-center d-lg-none m-2">Our Prices</h2>
+            <ul class="nav nav-tabs flex-lg-row m-lg-3 pb-5 justify-content-lg-end position-relative">
+              <h2 id="h2" class="d-none d-lg-inline-flex m-2">Our Prices</h2>
               <li class="nav-item ">
                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
               </li>
@@ -356,10 +358,10 @@
                   </div>
                   </div>
           <div class="col-lg-6 h-100">
-            <div class="row h-100">
+            <div class="row">
               <h2 class="text-center py-5">Testimonials</h2>
               <hr />
-              <div id="asd" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
+              <div id="asd" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#asd" data-bs-slide-to="0" class="active d-none">1</button>
                   <button type="button" data-bs-target="#asd" data-bs-slide-to="1" class="d-none">2</button>
