@@ -158,7 +158,8 @@
               allowfullscreen></iframe>
           </div>
           <div
-            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center h-75" style="background-color: #bbb;">
+            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center h-75"
+            style="background-color: #bbb">
             <h1>About Us</h1>
             <h3>Art Gallery is one of the country’s finest art museums welcoming over half a million visitors each year.</h3>
             <h3>Weekdays: 8:00–20:00 Weekends: 9:00–18:00</h3>
@@ -246,18 +247,18 @@
                 220
               </p>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
     <section id="section04">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 h-100">
             <h2 class="text-center d-lg-none m-2">Our Prices</h2>
-            <ul class="nav nav-tabs flex-lg-row m-lg-3 pb-5 justify-content-lg-end position-relative">
-              <h2 id="h2" class="d-none d-lg-inline-flex m-2">Our Prices</h2>
-              <li class="nav-item ">
+            <ul class="nav nav-tabs d-flex flex-lg-row m-lg-3 py-4 justify-content-center position-relative">
+              <li id="h2" class="fs-3 d-none d-lg-inline-flex m-2">Our Prices</li>
+              <li class="nav-item">
                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
               </li>
               <li class="nav-item">
@@ -296,13 +297,13 @@
                   artworks that
                   compliment any interior or art collection.
                 </div>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <div class="header">
+                  <div class="title">Canvas/Acrylic</div>
+                  <div class="price">95$</div>
                 </div>
-                <div class="tab-pane fade" id="profile">
-                  <div class="header">
-                    <div class="title">Canvas/Acrylic</div>
-                    <div class="price">95$</div>
-                  </div>
-                  <div class="body fs-6 mt-3">
+                <div class="body fs-6 mt-3">
                   Acrylic paintings are the most popular among our artists, their clients, and our gallery visitors. This type of
                   paintings is safe
                   for your health and is less affected by heat, while expressing a vast range of colours.
@@ -325,13 +326,13 @@
                   medium. Such
                   artworks are becoming more popular due to artists’ intense creativity.
                 </div>
+              </div>
+              <div class="tab-pane fade" id="contact">
+                <div class="header">
+                  <div class="title">Granite</div>
+                  <div class="price">48$</div>
                 </div>
-                <div class="tab-pane fade" id="contact">
-                  <div class="header">
-                    <div class="title">Granite</div>
-                    <div class="price">48$</div>
-                  </div>
-                  <div class="body fs-6 mt-3">
+                <div class="body fs-6 mt-3">
                   Granite sculptures are the oldest creative artworks based on stone carving, an activity available to humans since the
                   dawn of times.
                   This stone allows to create amazing and long-lasting sculptures.
@@ -353,13 +354,13 @@
                   Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
                   sophisticated.
                   Moreover, this material is sustainable and perfectly suites any interior/exterior.
-                  </div>
-                  </div>
-                  </div>
-                  </div>
+                </div>
+                </div>
+                </div>
+                </div>
           <div class="col-lg-6 h-100">
             <div class="row">
-              <h2 class="text-center py-5">Testimonials</h2>
+              <h2 id="test" class="text-center pb-5">Testimonials</h2>
               <hr />
               <div id="asd" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
                 <div class="carousel-indicators">
@@ -422,91 +423,124 @@
                       <img src="https://picsum.photos/100/100/?random=10" />
                     </div>
                   </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- ------------------------------------------- -->
-      
+
       <br />
     </section>
     <section id="section05">
-      <div class="container-fluid container-lg">
-        <h2 class="text-center">Our Blog</h2>
-        <div id="asd2" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#asd2" data-bs-slide-to="0" class="active d-none">1</button>
-            <button type="button" data-bs-target="#asd2" data-bs-slide-to="1" class="d-none">2</button>
-            <button type="button" data-bs-target="#asd2" data-bs-slide-to="2" class="d-none">3</button>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="news-slider" class="owl-carousel">
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
+                    laudantium
+                    necessitatibus neque quae tempora......
+                  </p>
+                  <span class="post-date">
+                    <i class="fa fa-clock-o"></i>
+                    Out 27, 2019
+                  </span>
+                  <a href="#" class="read-more">read more</a>
+                </div>
+                </div>
+                
+                <div class="post-slide">
+                  <div class="post-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503"
+                      alt="" />
+                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                  </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
+                    laudantium
+                    necessitatibus neque quae tempora......
+                  </p>
+                  <span class="post-date">
+                    <i class="fa fa-clock-o"></i>
+                    Out 27, 2019
+                  </span>
+                  <a href="#" class="read-more">read more</a>
+                  </div>
+                  </div>
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
+                    laudantium
+                    necessitatibus neque quae tempora......
+                  </p>
+                  <span class="post-date">
+                    <i class="fa fa-clock-o"></i>
+                    Out 27, 2019
+                  </span>
+                  <a href="#" class="read-more">read more</a>
+                  </div>
+                  </div>
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">
+                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                  </h3>
+                  <p class="post-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
+                    laudantium
+                    necessitatibus neque quae tempora......
+                  </p>
+                  <span class="post-date">
+                    <i class="fa fa-clock-o"></i>
+                    Out 27, 2019
+                  </span>
+                  <a href="#" class="read-more">read more</a>
+                  </div>
+                  </div>
+                  </div>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="header"><img class="w-100" src="https://picsum.photos/1920/1080/?random=10" /></div>
-              <div class="body">
-                <h5 class="text-center"><a href="#">Google Launched Virtual Tours of 50 Museums</a></h5>
-              </div>
-              <div class="footer d-flex justify-content-between">
-                <span>
-                  <i class="bi bi-clock"></i>
-                  October,22 2022
-                </span>
-                <span>
-                  <i class="bi bi-hand-thumbs-up-fill"></i>
-                  46
-                </span>
-              </div>
-            </div>
-            <div class="carousel-item border-1">
-              <div class="header"><img class="w-100" src="https://picsum.photos/1920/1080/?random=10" /></div>
-              <div class="body">
-                <h5 class="text-center"><a href="#">10 Facts From the Life of the Most Expensive Artist of Our Time</a></h5>
-              </div>
-              <div class="footer d-flex justify-content-between">
-                <span>
-                  <i class="bi bi-clock"></i>
-                  October,22 2022
-                </span>
-                <span>
-                  <i class="bi bi-hand-thumbs-up-fill"></i>
-                  46
-                </span>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="header"><img class="w-100" src="https://picsum.photos/1920/1080/?random=10" /></div>
-              <div class="body">
-                <h4 class="text-center"><a href="#">10 Steps: How to Create a Successful Business From Your Art</a></h4>
-              </div>
-              <div class="footer d-flex justify-content-between">
-                <span>
-                  <i class="bi bi-clock"></i>
-                  October,22 2022
-                </span>
-                <span>
-                  <i class="bi bi-hand-thumbs-up-fill"></i>
-                  46
-                </span>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#asd2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#asd2" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </section>
@@ -576,11 +610,22 @@
       integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
       crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"></script>
+    <script src="./c.js"></script>
     <script>
-                                                                                        AOS.init()
+        $(document).ready(function () {
+          $('#news-slider').owlCarousel({
+            items: 3,
+            itemsDesktop: [1200, 3],
+            itemsDesktopSmall: [992, 2],
+            itemsMobile: [768, 1],
+            navigation: true,
+            navigationText: ['', ''],
+            pagination: true,
+            autoPlay: true
+          })
+        })
+
+        AOS.init()
     </script>
   </body>
 </html>
