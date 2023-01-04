@@ -139,3 +139,25 @@
     responsive: !0, responsiveRefreshRate: 200, responsiveBaseWidth: g, baseClass: "owl-carousel", theme: "owl-theme", lazyLoad: !1, lazyFollow: !0, lazyEffect: "fade", autoHeight: !1, jsonPath: !1, jsonSuccess: !1, dragBeforeAnimFinish: !0, mouseDrag: !0, touchDrag: !0, addClassActive: !1, transitionStyle: !1, beforeUpdate: !1, afterUpdate: !1, beforeInit: !1, afterInit: !1, beforeMove: !1, afterMove: !1, afterAction: !1, startDragging: !1, afterLazyLoad: !1
   }
 })(jQuery, window, document);
+
+
+
+gsap.registerPlugin('ScrollTrigger')
+gsap.from('.navbar', {
+  yPercent: -100,
+  duration: 0.2,
+  scrollTrigger: {
+    start: `top ${$('.navbar').height()}`,
+    end: () => '+=' + document.documentElement.scrollHeight,
+    onEnter(self) {
+      self.animation.play()
+    },
+    onUpdate(self) {
+      self.direction === -1 ? self.animation.play() : self.animation.reverse()
+    },
+    markers: true
+  }
+})
+
+  < script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" ></script >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
