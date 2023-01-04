@@ -161,3 +161,14 @@ gsap.from('.navbar', {
 
   < script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" ></script >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+
+gsap.registerPlugin('ScrollTrigger')
+
+const navbar_tl = gsap.timeline({
+  trigger: '#section01',
+  start: '-10px top',
+  end: '50px top',
+  toggleActions: 'play reverse play none',
+  marker: true,
+})
