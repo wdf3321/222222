@@ -6221,7 +6221,7 @@ border-color: rgb(175,159,123);
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -75px;
   z-index: 1020;
 }
 
@@ -6243,9 +6243,9 @@ border-color: rgb(175,159,123);
 }
 @media (min-width: 992px) {
   .sticky-lg-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: -75px !important;
     z-index: 1020;
   }
 }

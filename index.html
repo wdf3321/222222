@@ -12,89 +12,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
       integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous" />
+
     <style></style>
   </head>
 
   <body>
-    <!-- navbar 是flexbox
-		fixed-top 固定在上方 
-		fixed-bottom 固定在下方
-		navbar-expand指通過某斷點展開導覽列 若無class 導覽列將處於摺疊狀態
-		navbar-light 文字變成黑色
-		navbar-dark 文字變成白色
-				-->
     <script src="./bootstrap.bundle.js"></script>
     <!-- NAVBAR -->
-    <section id="nav">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-coffee fixed-top d-flex">
-        <div class="container-fluid justify-content-start d-flex">
-          <!-- container-fluid 滿版 container 固定寬度 -->
-          <button class="btn btn-coffee d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- canvas -->
-          <div class="offcanvas offcanvas-start bg-coffee" tabindex="-1" id="offcanvas">
-            <div class="offcanvas-header"><button type="button" class="btn-close bg-light text-reset"
-                data-bs-dismiss="offcanvas"></button></div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav mb-2 mb-lg-0 m-auto flex-lg-column">
-                <li class="nav-item mx-4">
-                  <a class="nav-link active" href="#section01">HOME</a>
-                </li>
-                <li class="nav-item mx-4">
-                  <a class="nav-link" href="#section04">ABOUT US</a>
-                </li>
-                <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
-                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Services</a></li>
-                    <li><a class="dropdown-item" href="#">Paintings</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
-                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
-                    <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
-                    <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mx-4">
-                  <a class="nav-link" href="#section05">CONTACTS</a>
-                </li>
-                <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
-                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
-                    <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
-                    <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- navbar no1 -->
-          <span class="d-lg-inline-block d-none m-4" style="color: #fff">
-            Follow us :
-            <i class="bi bi-telephone-fill mx-2"></i>
-            <i class="bi bi-twitter mx-2"></i>
-            <i class="bi bi-github mx-2"></i>
-          </span>
-          <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
-          <span class="d-lg-inline-block d-none m-4" style="color: #fff">
-            <i class="bi bi-telephone-fill mx-4"></i>
-            1-800-800-800
-          </span>
-        </div>
-        <!-- 選單區 -->
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee d-flex sticky-lg-top fixed-top">
+      <div class="container-fluid justify-content-start d-flex">
+        <!-- container-fluid 滿版 container 固定寬度 -->
+        <button class="btn btn-coffee d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- canvas -->
+        <div class="offcanvas offcanvas-start bg-coffee" tabindex="-1" id="offcanvas">
+          <div class="offcanvas-header"><button type="button" class="btn-close bg-light text-reset"
+              data-bs-dismiss="offcanvas"></button></div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mb-2 mb-lg-0 m-auto flex-lg-column">
               <li class="nav-item mx-4">
                 <a class="nav-link active" href="#section01">HOME</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#section04">ABOUT US</a>
+                <a class="nav-link" href="#section02">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
+                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#section03">Services</a></li>
+                  <li><a class="dropdown-item" href="#section03">Paintings</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+                    <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#section04">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#section04">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#section04">Full-Width Gallery</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link" href="#section05">CONTACTS</a>
+                  </li>
+                  <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#section06">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#section06">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#section06">Full-Width Gallery</a></li>
+                  </ul>
+                  </li>
+                  </ul>
+                  </div>
+                  </div>
+                  <!-- navbar no1 -->
+                  <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+                    Follow us :
+                    <i class="bi bi-telephone-fill mx-2"></i>
+                    <i class="bi bi-twitter mx-2"></i>
+                    <i class="bi bi-github mx-2"></i>
+                  </span>
+                  <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
+                  <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+                    <i class="bi bi-telephone-fill mx-4"></i>
+                    1-800-800-800
+                  </span>
+                  </div>
+                  <!-- 選單區 -->
+                  <div class="container-fluid">
+        <div class="collapse navbar-collapse bg-coffee" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+            <li class="nav-item mx-4">
+              <a class="nav-link active" href="#section01">HOME</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#section01">ABOUT US</a>
               </li>
               <li class="nav-item dropdown mx-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
@@ -122,13 +115,12 @@
                   <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
                 </ul>
               </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
+              </ul>
+              </div>
+              </div>
+              </nav>
     <!-- ---------------- -->
-    <section id="section01" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-1000">
+    <section id="section01" data-aos="fade-up" data-aos-anchor=".navbar" data-aos-duration="500">
       <div class="container-fluid">
         <div class="row d-flex h-100 m-0">
           <div id="left"
@@ -152,14 +144,18 @@
     <section id="section02">
       <div class="container-fluid d-flex justify-content-center">
         <div class="row d-flex h-100 p-0 w-100">
-          <div class="col-12 col-lg-7 p-0 h-75">
-            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70" title="YouTube video player" frameborder="0"
+          <div class="col-12 col-lg-7 p-0 h-75" data-aos="fade-left" data-aos-anchor="#section02" data-aos-duration="900">
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70" title="YouTube video player"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div
             class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center h-75"
-            style="background-color: #bbb">
+            style="background-color: #bbb"
+            data-aos="fade-right"
+            data-aos-anchor="#section02" 
+            data-aos-duration="900">
             <h1>About Us</h1>
             <h3>Art Gallery is one of the country’s finest art museums welcoming over half a million visitors each year.</h3>
             <h3>Weekdays: 8:00–20:00 Weekends: 9:00–18:00</h3>
@@ -355,9 +351,9 @@
                   sophisticated.
                   Moreover, this material is sustainable and perfectly suites any interior/exterior.
                 </div>
-                </div>
-                </div>
-                </div>
+              </div>
+              </div>
+              </div>
           <div class="col-lg-6 h-100">
             <div class="row">
               <h2 id="test" class="text-center pb-5">Testimonials</h2>
@@ -443,6 +439,7 @@
     </section>
     <section id="section05">
       <div class="container-fluid">
+        <h3 class="text-center">Our blog</h3>
         <div class="row">
           <div class="col-md-12">
             <div id="news-slider" class="owl-carousel">
@@ -453,93 +450,69 @@
                     alt="" />
                   <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                 </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
-                    laudantium
-                    necessitatibus neque quae tempora......
-                  </p>
-                  <span class="post-date">
-                    <i class="fa fa-clock-o"></i>
-                    Out 27, 2019
-                  </span>
-                  <a href="#" class="read-more">read more</a>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">Google Launched Virtual Tours of 50 Museums</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      October 27, 2033
+                      </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                    </div>
                 </div>
-                </div>
-                
-                <div class="post-slide">
-                  <div class="post-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=503"
-                      alt="" />
-                    <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
-                  </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
-                    laudantium
-                    necessitatibus neque quae tempora......
-                  </p>
-                  <span class="post-date">
-                    <i class="fa fa-clock-o"></i>
-                    Out 27, 2019
-                  </span>
-                  <a href="#" class="read-more">read more</a>
-                  </div>
-                  </div>
+              </div>
               <div class="post-slide">
                 <div class="post-img">
                   <img
-                    src="https://images.unsplash.com/photo-1564979268369-42032c5ca998?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=500"
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
                     alt="" />
                   <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                 </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
-                    laudantium
-                    necessitatibus neque quae tempora......
-                  </p>
-                  <span class="post-date">
-                    <i class="fa fa-clock-o"></i>
-                    Out 27, 2019
-                  </span>
-                  <a href="#" class="read-more">read more</a>
-                  </div>
-                  </div>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">10 Facts From the Life of the Most Expensive Artist of Our Time</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      October 27, 2033
+                      </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                    </div>
+                    </div>
+                    </div>
               <div class="post-slide">
                 <div class="post-img">
                   <img
-                    src="https://images.unsplash.com/photo-1576659531892-0f4991fca82b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
                     alt="" />
                   <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
                 </div>
-                <div class="post-content">
-                  <h3 class="post-title">
-                    <a href="#">Lorem ipsum dolor sit amet.</a>
-                  </h3>
-                  <p class="post-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa
-                    laudantium
-                    necessitatibus neque quae tempora......
-                  </p>
-                  <span class="post-date">
-                    <i class="fa fa-clock-o"></i>
-                    Out 27, 2019
-                  </span>
-                  <a href="#" class="read-more">read more</a>
-                  </div>
-                  </div>
-                  </div>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">10 Steps: How to Create a Successful Business From Your Art</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      Out 27, 2033
+                      </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                    </div>
+                </div>
+                </div>
+                </div>
           </div>
         </div>
       </div>
@@ -614,14 +587,14 @@
     <script>
         $(document).ready(function () {
           $('#news-slider').owlCarousel({
-            items: 3,
-            itemsDesktop: [1200, 3],
+            items: 2,
+            itemsDesktop: [1200, 2],
             itemsDesktopSmall: [992, 2],
             itemsMobile: [768, 1],
             navigation: true,
-            navigationText: ['', ''],
+            navigationText: ['<', '>'],
             pagination: true,
-            autoPlay: true
+            autoPlay: false
           })
         })
 

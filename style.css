@@ -33,10 +33,9 @@
   align-content: stretch;
   flex-wrap: wrap;
 }
-
 #section01 {
   height: 75vh;
-  margin-top: 16vh;
+  margin-top: 4vh;
   color: #fff;
 }
 #about {
@@ -51,6 +50,7 @@
 #section03 p {
   width: 100%;
 }
+
 #section04 .nav-tabs {
   display: flex;
   margin-left: auto;
@@ -149,7 +149,7 @@
     height: 90vh;
   }
   #section04 {
-    height: 80vh;
+    height: 90vh;
     background: #eee;
   }
   #asd {
@@ -183,7 +183,7 @@
   overflow: hidden;
   border-radius: 10px;
   margin: -12px 15px 8px 15px;
-  margin-left: -10px;
+  margin-left: 10px;
 }
 .post-slide .post-img img {
   width: 100%;
@@ -269,7 +269,7 @@
 .owl-controls .owl-buttons .owl-prev {
   background: #fff;
   position: absolute;
-  top: -13%;
+  top: 0%;
   left: 15px;
   padding: 0 18px 0 15px;
   border-radius: 50px;
@@ -288,13 +288,13 @@
 }
 .owl-controls .owl-buttons .owl-prev:after,
 .owl-controls .owl-buttons .owl-next:after {
-  content: ' <';
+  content: '';
   font-family: FontAwesome;
   color: #333;
   font-size: 30px;
 }
 .owl-controls .owl-buttons .owl-next:after {
-  content: ' >';
+  content: '';
 }
 @media only screen and (max-width: 1280px) {
   .post-slide .post-content {
@@ -306,6 +306,10 @@
   #more {
     width: 220px;
     height: 70px;
+  }
+  #section01 {
+    height: 100vh;
+    margin-top: 11vh !important;
   }
   #section01 #left {
     background-image: url(./bg-image-08.jpg);
@@ -344,6 +348,8 @@
   #section04 .carousel-inner {
     height: 75vh;
   }
+  #section05{
+  height: 55vh;}
 }
 
 @media (max-width: 767px) {
@@ -356,6 +362,7 @@
   }
   #section01 {
     height: 160vh;
+    margin-top: 13vh !important;
   }
 
   #section01 .container-fluid {
@@ -403,7 +410,7 @@
     top: 20rem !important;
   }
   #section05 {
-    height: 100vh;
+    height: 75vh;
     margin-bottom: 2rem !important;
   }
   #gmap {
