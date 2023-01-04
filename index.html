@@ -15,7 +15,6 @@
 
     <style>
       body {
-    
         width: 100vw;
         overflow-x: hidden;
       }
@@ -38,55 +37,70 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav mb-2 mb-lg-0 m-auto flex-lg-column">
               <li class="nav-item mx-4">
-                <a class="nav-link active" href="#section01">HOME</a>
+                <a class="nav-link active" href="#">HOME</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="#section02">ABOUT US</a>
+                <a class="nav-link" href="#">ABOUT US</a>
               </li>
               <li class="nav-item dropdown mx-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
                 <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#section03">Services</a></li>
-                  <li><a class="dropdown-item" href="#section03">Paintings</a></li>
+                  <li><a class="dropdown-item" href="#">Services</a></li>
+                  <li><a class="dropdown-item" href="#">Paintings</a></li>
                 </ul>
-                </li>
-                <li class="nav-item dropdown mx-4">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
-                  <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#section04">Grid Gallery</a></li>
-                  <li><a class="dropdown-item" href="#section04">Masonry Gallery</a></li>
-                  <li><a class="dropdown-item" href="#section04">Full-Width Gallery</a></li>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
                 </ul>
-                </li>
-                <li class="nav-item mx-4">
-                  <a class="nav-link" href="#section05">CONTACTS</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">CONTACTS</a>
                 </li>
                 <li class="nav-item dropdown mx-4">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
                   <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#section06">Grid Gallery</a></li>
-                  <li><a class="dropdown-item" href="#section06">Masonry Gallery</a></li>
-                  <li><a class="dropdown-item" href="#section06">Full-Width Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
                 </ul>
-                </li>
-                </ul>
-                </div>
-                </div>
-                <!-- navbar no1 -->
-                <span class="d-lg-inline-block d-none m-4" style="color: #fff">
-                  Follow us :
-                  <i class="bi bi-telephone-fill mx-2"></i>
-                  <i class="bi bi-twitter mx-2"></i>
-                  <i class="bi bi-github mx-2"></i>
-                </span>
-                <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
-                <span class="d-lg-inline-block d-none m-4" style="color: #fff">
-                  <i class="bi bi-telephone-fill mx-4"></i>
-                  1-800-800-800
-                </span>
-                </div>
-                <!-- 選單區 -->
-                <div class="container-fluid">
+              </li>
+              </ul>
+              </div>
+              </div>
+        <!-- -----------------------navbar no1----------------- -->
+        <span id="follow" class="d-lg-inline-block d-none m-4" style="color: #fff">
+          Follow us :
+          <i class="bi bi-telephone-fill mx-2"></i>
+          <i class="bi bi-twitter mx-2"></i>
+          <i class="bi bi-github mx-2"></i>
+        </span>
+        <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
+        <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+          <i class="bi bi-telephone-fill mx-4"></i>
+          1-800-800-800
+        </span>
+        <a id="info" class="btn bg-coffee d-lg-none" data-bs-toggle="collapse" href="#collapseExample" role="button">
+          <i class="bi bi-three-dots-vertical"></i>
+        </a>
+        <div class="collapse float-end d-lg-none" id="collapseExample">
+          <div class="d-inline-block bg-coffee" id="infostyle">
+            Follow us :
+            <i class="bi bi-telephone-fill mx-2"></i>
+            <i class="bi bi-twitter mx-2"></i>
+            <i class="bi bi-github mx-2"></i>
+            <br>
+            <br>
+            <i class="bi bi-telephone-fill mx-4"></i>
+            1-800-800-800
+          </div>
+        </div>
+        </div>
+        <!-- ----------------------選單區 --------------------------->
+        <div class="container-fluid">
         <div class="collapse navbar-collapse bg-coffee" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
             <li class="nav-item mx-4">
@@ -121,11 +135,11 @@
                 <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
               </ul>
             </li>
-            </ul>
-            </div>
-            </div>
-            </nav>
-    <!-- ---------------- -->
+          </ul>
+          </div>
+          </div>
+          </nav>
+    <!-- ------ ------ ------ ---------EVENT------- ------ ------ ------ ------ ------ ------ -->
     <section id="section01" data-aos="fade-up" data-aos-anchor=".navbar" data-aos-duration="500">
       <div class="container-fluid">
         <div class="row d-flex h-100 m-0">
@@ -146,7 +160,7 @@
         </div>
       </div>
     </section>
-    <!----------------->
+    <!--------------------------ABOUT US------------------------------------>
     <section id="section02">
       <div class="container-fluid d-flex justify-content-center">
         <div class="row d-flex h-100 p-0 w-100">
@@ -170,7 +184,7 @@
         </div>
       </div>
     </section>
-    <!------------------------------------ -->
+    <!------------WORKS OF ARTISTS---------------------------------------------------------- -->
     <section id="section03" data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="900">
       <div class="container-fluid">
         <h1 data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1100">Works Of Artists</h1>
@@ -178,7 +192,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div data-aos="zoom-in" data-aos-anchor="#section03" data-aos-duration="1100" class="card">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/1200/1200/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=10" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -192,7 +206,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1200" class="card">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/1200/1200/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=9" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -205,7 +219,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1300" class="card h-50">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/800/800/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=8" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -216,7 +230,7 @@
             </div>
             <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1500" class="card h-50">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/800/800/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=7" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -229,7 +243,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1400" class="card h-50">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/800/800/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=6" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -240,7 +254,7 @@
             </div>
             <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1400" class="card h-50">
               <div class="card-img-overlay">
-                <img src="https://picsum.photos/800/800/?random=10" />
+                <img src="https://picsum.photos/1920/1080/?random=5" />
               </div>
               <p class="card-text">
                 <i class="bi bi-hand-thumbs-up-fill"></i>
@@ -253,10 +267,11 @@
         </div>
       </div>
     </section>
+    <!--------------------------------- PAINTING TESTIMONIALS--------------------------------- -->
     <section id="section04">
       <div class="container-fluid">
         <div class="row">
-          <div data-aos="fade-up-left" data-aos-anchor="#section04" data-aos-duration="1000" class="col-lg-6 h-100">
+          <div data-aos="fade-up-left" data-aos-anchor="#section04" data-aos-duration="1000" class="col-lg-6 h-100" id="price">
             <h2 class="text-center d-lg-none m-2">Our Prices</h2>
             <ul class="nav nav-tabs d-flex flex-lg-row m-lg-3 py-4 justify-content-center position-relative">
               <li id="h2" class="fs-3 d-none d-lg-inline-flex m-2">Our Prices</li>
@@ -359,9 +374,9 @@
                 </div>
               </div>
             </div>
-            </div>
+          </div>
           <div data-aos="fade-up-left" data-aos-anchor="#section04" data-aos-duration="1000" data-aos-delay="300"
-            class="col-lg-6 h-100 my-5 m-lg-0">
+            class="col-lg-6 h-100 my-5 m-lg-0" id="testmonials">
             <div class="row">
               <h2 id="test" class="text-center pb-5">Testimonials</h2>
               <hr />
@@ -440,10 +455,9 @@
           </div>
         </div>
       </div>
-      <!-- ------------------------------------------- -->
-
       <br />
     </section>
+    <!-------------------------------BLOG CAROUSEL--------------------------------------- -->
     <section id="section05" data-aos="fade-right" data-aos-anchor="#section05" data-aos-duration="1400">
       <div class="container-fluid">
         <h3 class="text-center">Our blog</h3>
@@ -494,8 +508,8 @@
                       43
                     </span>
                   </div>
-                  </div>
-                  </div>
+                </div>
+                </div>
               <div class="post-slide">
                 <div class="post-img">
                   <img
@@ -519,11 +533,12 @@
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!---------------------------------FOOTER-------------------------------->
     <section id="section06" class="p-3">
       <div class="container-fluid">
         <div class="row">
@@ -604,7 +619,6 @@
             autoPlay: false
           })
         })
-
         AOS.init()
     </script>
   </body>
