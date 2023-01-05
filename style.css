@@ -1,7 +1,9 @@
 :root {
   --bs-coffee-rgb: 80, 60, 0;
+  --bs-main-rgb: 175, 159, 123;
 }
-*{ }
+* {
+}
 .carousel-inner {
   height: 75%;
 }
@@ -21,55 +23,70 @@
 .card-text {
   position: relative;
   top: 50%;
-  left: 53%;
+  left: 52%;
+  width: transparent;
   transform: translate(-50%, -50%) !important;
   text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+  color: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
+}
+.card:hover > .card-text  {
+color: #fff;
+background: rgba(0, 0, 0, 0.5);
+transition: .5s;
 }
 nav #info {
   position: absolute;
-  top:2.5vh;
+  top: 2vh;
   right: 5vw;
   color: #fff;
-
+  transform: scale(1.6);
 }
-#info i{
-width: 40px;
-height: 40px;
+#info i {
 }
 nav #infostyle {
-
   position: fixed;
-  top: 10vh;
+  top: 8.15vh;
   right: 0vw;
-  width: 220px;
+  width: 210px;
   height: 100px;
   padding: 12px;
   color: #fff;
-  
 }
 #section01 {
   height: 75vh;
   margin-top: 4vh;
   color: #fff;
 }
+#section01 h1 {
+  font-size: 3rem;
+}
+
+#section01 h1 {
+  border-bottom: 10px solid rgba(var(--bs-main-rgb), 0);
+}
+#section01 h1:hover {
+  border-bottom: 10px solid rgba(var(--bs-main-rgb), 0.7);
+  transition: 0.3s;
+}
 #about {
   background: #ddd;
 }
 #about2 {
   background-color: #af9f7b;
+  margin-top: 2rem;
+  width: 180px;
+  height: 75px;
 }
+
 #section03 {
   height: 125vh;
+  object-fit: fill;
 }
 #section03 p {
   width: 100%;
 }
-#section03 .card:hover {
-  transform: scale(1.1);
-  transition: 0.05s;
-}
+
 #section04 {
   background: #eee;
 }
@@ -120,6 +137,7 @@ nav #infostyle {
 }
 .carousel-caption img {
   border-radius: 50%;
+  border: 5px solid rgba(var(--bs-main-rgb), 1);
 }
 
 /* ---------------------------------------------- */
@@ -171,7 +189,7 @@ nav #infostyle {
     height: 90vh;
   }
   #section04 {
-    height: 90vh;
+    height: 75vh;
     background: #eee;
   }
   #asd {
@@ -187,7 +205,7 @@ nav #infostyle {
     padding-top: 3.2rem;
   }
 }
-/* ----------- */
+/* ---------------------------------carousel--------------------------------------------- */
 
 #news-slider {
   margin-top: 80px;
@@ -353,6 +371,7 @@ nav #infostyle {
     height: 100vh;
     width: auto;
   }
+
   #section03 .col-12 .card {
     height: 50vh !important;
   }
@@ -410,12 +429,18 @@ nav #infostyle {
   #section01 .col-12 .col:nth-child(1) {
     border-bottom: 10px solid #fff;
   }
+  #section01 h5 {
+    width: transparent;
+    font-size: 19px;
+    margin-bottom: 1rem;
+  }
   #section02 {
     height: 165vh;
   }
   #section02 > .container-fluid {
     height: 100vh;
   }
+
   #section03 {
     height: 250vh;
   }
